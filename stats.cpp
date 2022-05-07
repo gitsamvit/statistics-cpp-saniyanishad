@@ -2,7 +2,7 @@
 
 Stats Statistics::ComputeStatistics(const std::vector<___>& ) {
     //Implement statistics here
-    auto computedstats;
+    stats computedstats;
     int x=0;
     float epsilon;
     int arry={};
