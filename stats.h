@@ -8,7 +8,7 @@ using namespace std;
 
 
 namespace Statistics {
-    //Stats ComputeStatistics(const std::vector<___>& );
+    //Stats ComputedStatistics(const std::vector<___>& );
     template <typename T=double>	//default
 	class Stats
    	 {
@@ -20,7 +20,7 @@ namespace Statistics {
         Stats(T average,T Max,T Min);
 	};
 	template<typename T=double>
-	Stats<T> ComputeStatistics(const std::vector<T>& );
-	//Stats ComputeStatistics(const std::vector<float>&);
+	Stats<T> ComputedStatistics(const std::vector<T>& );
+	//Stats ComputedStatistics(const std::vector<float>&);
 }
 
