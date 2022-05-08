@@ -1,7 +1,7 @@
 #include "stats.h"
 #include<cmath.h>
 #include<bits/stdc++.h>
-Stats Statistics::ComputeStatistics(const std::vector<___>& ) 
+//Stats Statistics::ComputeStatistics(const std::vector<___>& ) 
    // Implement statistics here
 template<typename T> Statistics::Stats<>::Stats(){}
 template<typename T> Statistics::Stats<T,T,T>::Stats(T Average,T Max,T Min):Average(Average),Max(Max),Min(Min){}
