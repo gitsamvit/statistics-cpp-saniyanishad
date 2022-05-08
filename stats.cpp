@@ -1,34 +1,24 @@
 #include "stats.h"
 #include<cmath.h>
 #include<iostream>
-Stats Statistics::ComputeStatistics(const std::vector<___>& ) {
-    //Implement statistics here
-    //auto computedstats;
-    //int x=0;
-    //float epsilon;
-    //int arry{}
- //}
-int main(){
-    int i=1;
-    int n;
-    while(cin>>n){
-        int min;
-        int max;
-       cin>>max;
-        min=max;
-        for (int j=0;j<n-1;j++){
-            int temp;
-            cin>>temp;
-            if(temp<min){
-                min = temp;
-            }
-            if(temp>max);
-            max = temp;
-        }
+Stats Statistics::ComputeStatistics(const std::vector<___>& ) 
+   // Implement statistics here
+    template<typename T> Statistics::Stats<>::Stats(){}
+template<typename T> Statistics::Stats<T,T,T>::Stats(T Average,T Max,T Min):Average(Average),Max(Max),Min(Min){}
+template<typename T> Statistics::Stats<T> Statistics::ComputeStatistics(const std::vector<T>& data)
+ {
+    Stats<T> st;
+    if(data.size()==0)
+    {
+       st.Average=NAN;
+       st.Max=NAN;
+       st.Min=NAN;
     }
-    cout<<"case"<<i<<":"<<min<<""<<max<<""max-min<<endl;
-    i++;
-}
-}
     
+    st.Max=*max_element(data.begin(),data.end());
+    st.Min=*min_element(data.begin(),data.end());
+    T sum=accumulate(data.begin(), data.end() , 0);
+    st.Average=(sum/data.size());
+    return st;
+}
             
