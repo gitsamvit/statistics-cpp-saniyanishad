@@ -3,7 +3,7 @@
 #include "catch.hpp"
 #include "stats.h"
 
-#include <cmath.h>
+#include <cmath>
 
 TEST_CASE("reports average, minimum and maximum") {
     std::vector<float>;
